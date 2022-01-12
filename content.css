@@ -1,0 +1,44 @@
+table, th, td {
+  font-family: Open Sans;
+  font-size: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  background-color: #ffffff;
+  margin-top: 25px;
+  height: 30%;
+  width: 30%;
+  text-align:center;
+  display: inline block;
+  padding: 0 15px;
+}
+span{
+  padding-left: 3px;
+  padding-right: 3px;
+  display: inline-block;
+  color:#000000;
+  cursor: text;
+  border: solid 1px rgb(0, 0, 0);
+  font:14px/20px cursive;
+  min-width: 50px; 
+  max-width: 200px;
+  cursor: text;
+}
+span.badge[contenteditable] {
+    display: inline-block;
+}
+
+span:empty::before {
+  content: attr(data-placeholder);
+  display: block;
+  height: 100%;
+  color: #00000066;
+}
+
+[contenteditable="true"]:focus {
+  background-color: rgb(255, 255, 255);
+}
+
+[contenteditable="true"] {
+  background-color: rgb(212, 212, 212);
+  
+}
